@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Kemonomimi Republic"
+---
+
+<div class="smallbanner">
+    <small>A fictional website for the <a href="aircs.racing">bnbmc</a> Minecraft server</small>
+</div>
+
+<div class="navbar">
+    <nav>
+
+    </nav>
+</div>
+
+<div class="top">
+    <h1>
+        Welcome to the Kemonomimi Republic
+    </h1>
+</div>
+
+<div class="content">
+
+    <h2>Topics and Government Services</h2>
+    <ul>
+        {% for item in site.data.topics %}
+        <li>
+            <a href="{{ item.link }}">
+                <span>{{ item.icon }}</span>
+                <h2>{{ item.name }}</h2>
+                <span>{{ item.description }}</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
